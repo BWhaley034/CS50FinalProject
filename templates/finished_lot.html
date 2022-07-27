@@ -1,0 +1,16 @@
+<!-- This page should just be the form to submit tasting notes for a bottled lot -->
+
+{% extends lot_display.html %}
+
+{% block body %}
+
+{% block form %}
+<!-- Insert form for tasting notes-->
+    <form action="/finished_lot" method="POST">
+        <label> Submit tasting notes </label>
+        <input type="text" name="notes" placeholder="Tasting Notes">
+        <input type="submit">
+    </form>
+{% endblock %}
+
+{% endblock %}

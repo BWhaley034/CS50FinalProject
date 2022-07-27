@@ -1,0 +1,35 @@
+Powershell:
+
+md (make directory)
+new-item (create a new folder/file)
+remove-item
+rm (remove)
+cd (change directory)
+
+With the exeption of the form, most of the content between the current_lot and finished_lot should be the same, can make one template 
+    for both current and finished and just change the form somehow?
+    lot_display inherits from template, current_lot and finished_lot inherit from lot_display?
+
+
+Submit Log:
+Test:
+    - SG (with associated must temp)
+    - Acidity (with types of reading, strip or titratable)
+    - Temperature
+Log:
+    - Actions:
+        - Added compound (fining agent, Campden, yeast (slurry or dry)) with entry for qty and text for notes
+        - Yeast starter (Started and/or notes)
+Maybe just start out with a basic notes Log
+
+
+
+Do these three need different templates? Or would a single template be sufficient?
+
+new_lot should have a form for STARTING a batch (and needs a button on the main page)
+    After initial data filled out, should redirect to a current lot 
+
+current_lot should be for already started batches that haven't been bottled
+    - Temperature graph (selectable time range)
+
+finished_lot should be for lots that have been bottled

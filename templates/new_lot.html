@@ -1,0 +1,20 @@
+<!-- This file should only really contain the form for starting a new wine -->
+
+{% extends template.html %}
+
+{% block body %}
+
+<!-- This form should provide a way to log wine measurements:
+    - SG (and temperature)-->
+
+<form action="/new_lot" method="POST">
+    <label> Log Entry: </label>
+    <input type="text" name="notelog" id="notelog" placeholder="Enter log here">
+    <label> Input SG: </label>
+    <input type="number" name="SG" id="SG" placeholder="1.00">
+    <label> Input must temp:</label>
+    <input type="number" name="mtemp" id="mtemp" placeholder="75">
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock %}
